@@ -1,0 +1,478 @@
+html
+{
+    scroll-behavior: smooth;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.logo
+{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color: #212529;
+    position: relative;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+
+}
+
+.backgroundpic
+{
+    display: block;
+    height: 220px;
+    width: 100%;
+    min-width: 600px;
+    transform-origin: top;
+    -webkit-animation: animateWave 2000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    animation: animateWave 2000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    background-image: url(../images/wave-bg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navBar:not(.logo)
+{
+    background-color: rgb(244,246,248);
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 60%;
+    transition: 0.6s;
+} 
+
+.navig-link
+{
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #212529;
+    text-decoration: none;
+}  
+
+/* section
+{
+    height: 100vh; 
+    scroll-snap-align: start;
+} */
+
+.intro
+{
+    display: flex;
+    align-items: center;
+    zoom: 130%;
+}
+
+.display-section
+{
+    background-color: rgb(244,246,248);
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding-top: 5rem;
+    margin: 0 5px;
+}
+
+.picture
+{
+    position: relative;
+}
+
+.resume-btn
+{
+    text-decoration: none;
+    padding: 0.7rem;
+    border-radius: 100px;
+    margin-left: 110px;
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+    background-color:#33363D;
+    letter-spacing: 2px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.resume-btn:hover
+{
+    background-color: bisque;
+    color: black;
+    font-weight: bolder;
+    box-shadow: 1px 1px 1px 1px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.social-icons
+{
+    display: flex;
+    list-style: none;
+    font-size: 27px;
+    margin-left: 60px;
+}
+
+/* page 2, about me */
+.about-me
+{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding-top: 5rem;
+    margin: 0 5px;
+}
+
+.information
+{
+    align-items: center;
+}
+
+.information p
+{
+    font-size: 20px;
+}
+
+.information li
+{
+    font-size: 15px;
+}
+
+.about-me li
+{
+    list-style-type: none;
+}
+
+.information h4
+{
+    font-size: 50px;
+    font-weight: 700;
+} 
+
+/* page 3 skills */
+
+#third-pageSkills
+{
+    padding-top: 1%;
+}
+
+.main-skill-container
+{
+    display: flex;
+    padding-left:29%;
+}
+
+.sk-container {
+    background-color: #f4f6f8;
+    justify-content: center;
+    padding: 3rem;
+    width: 40%;
+    align-items: center;
+    border-radius: 8px;
+
+}
+
+.skills-container {
+    background-color: #f4f6f8;
+    justify-content: center;
+    padding: 3rem;
+    width: 40%;
+    align-items: center;
+    border-radius: 8px;
+    margin-right: 40%;
+}
+
+.sk-containerheading {
+    text-align: center;
+}
+
+.sk-percentage1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sk-percentage2 {
+    margin-bottom: 30px;
+}
+
+.sk-percentage3 {
+    position: relative;
+    width: 350px;
+    height: 20px;
+    border-radius: 30px;
+    background-color: rgb(220, 213, 213);
+    box-shadow: rgb(168, 156, 156);
+}
+
+.html_span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 20px;
+    background: #33363D;
+}
+
+.css_span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: center;
+    border-radius: 20px;
+    background: #33363D;
+}
+
+.javascript_span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: center;
+    border-radius: 20px;
+    background: #33363D;
+}
+
+.python_span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: center;
+    border-radius: 20px;
+    background: #33363D;
+}
+
+.github_span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: center;
+    border-radius: 20px;
+    background: #33363D;
+}
+
+.sql_span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: center;
+    border-radius: 20px;
+    background: #33363D;
+}
+
+.dataER_span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: center;
+    border-radius: 20px;
+    background: #33363D;
+}
+
+.aws_span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: center;
+    border-radius: 20px;
+    background: #33363D;
+}
+
+.react_span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: center;
+    border-radius: 20px;
+    background: #33363D;
+}
+
+.java_span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: center;
+    border-radius: 20px;
+    background: #33363D;
+}
+
+.oracle_span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: center;
+    border-radius: 20px;
+    background: #33363D;
+}
+
+.networking_span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: center;
+    border-radius: 20px;
+    background: #33363D;
+}
+
+.projectmgmt_span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: center;
+    border-radius: 20px;
+    background: #33363D;
+}
+
+.machineLearning_span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: center;
+    border-radius: 20px;
+    background: #33363D;
+}
+
+
+/* Contact Me Section */
+.container
+{
+    width: 100%;
+    height: 60vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form
+{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+form h3
+{
+    color: #555;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+form input, form textarea
+{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 16px;
+}
+
+form button
+{
+    padding: 15px;
+    background: #33363D;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
